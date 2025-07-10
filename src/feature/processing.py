@@ -15,7 +15,7 @@ print(filter_by_state(operation, 'CANCELED'))
 
 
 
-def sort_by_date(operation: str) -> str:
+def sort_by_date(operation: list) -> list:
     """Функция принимает список словарей и возвращает список отсортированный по дате"""
     return sorted(operation, key=lambda x: x["date"], reverse=True)
 
